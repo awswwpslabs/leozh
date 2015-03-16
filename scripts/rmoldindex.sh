@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -f /var/www/html/*
+rm -rf /var/www/html/*
