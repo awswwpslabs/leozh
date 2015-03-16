@@ -1,0 +1,13 @@
+version: 0.0
+os: linux 
+files:
+  - source: content/
+    destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: scripts/installapache.sh 
+      timeout: 120
+      runas: root
+    - location: scripts/rmoldindex.sh
+      timeout: 120
+      runas: root
